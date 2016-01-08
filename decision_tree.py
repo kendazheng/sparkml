@@ -7,6 +7,8 @@ from pyspark.mllib.tree import DecisionTree
 sc = SparkContext()
 
 result = {1.0: 'yes', 0.0: 'no'}
+
+# 机器学习实战第三章中的鱼类归属数据源
 data = [
     LabeledPoint(1, [1, 1]),
     LabeledPoint(1, [1, 1]),
