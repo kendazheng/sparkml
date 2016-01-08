@@ -51,7 +51,6 @@ def get_dicts():
         emails_vector.append((labels[i], get_vectors(dicts, emails[i])))
     return emails_vector
 
-# print get_dicts()
 
 if __name__ == '__main__':
     dicts = get_dicts()
