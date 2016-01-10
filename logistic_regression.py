@@ -11,16 +11,20 @@ def textParse(line):
     return line_list[-1], line_list[0:-1]
 
 
+def generateDatas(lines):
+    datas = []
+    for item in lines:
+        label, text_list = textParse(item.strip())
+        datas.append(LabeledPoint(label, text_list))
+    return datas
+
+
 def getDatas():
     datas = []
     training_datas = open('horseColic/horseColicTraining.txt').readlines()
-    for item in training_datas:
-        datas.append(LabeledPoint(textParse(item.strip())
-                                  [0], textParse(item.strip())[1]))
+    datas.extend(generateDatas(training_datas))
     test_datas = open('horseColic/horseColicTest.txt')
-    for item in test_datas:
-        datas.append(LabeledPoint(textParse(item.strip())
-                                  [0], textParse(item.strip())[1]))
+    datas.extend(generateDatas(test_datas))
     return datas
 
 if __name__ == '__main__':
