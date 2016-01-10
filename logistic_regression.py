@@ -30,8 +30,10 @@ def getDatas():
 if __name__ == '__main__':
     sc = SparkContext()
     datas = sc.parallelize(getDatas())
+    print '**' * 50
     print datas.collect()[0]
     print datas.collect()[3]
+    print '**' * 50
     model = LogisticRegressionWithLBFGS.train(datas)
     print '--' * 50
     print model.predict(array([2.0, 1.0, 38.5, 54.0, 20.0, 0.0, 1.0, 2.0, 2.0, 3.0, 4.0, 1.0, 2.0, 2.0, 5.9, 0.0, 2.0, 42.0, 6.3, 0.0, 0.0]))
