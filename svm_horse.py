@@ -1,5 +1,5 @@
-#  调用Spark内部的SVM算法，对机器学习实战中的底五章的根据马的病症预测马的死亡性
 # -* coding:utf-8 *-
+# 调用Spark内部的SVM算法，对机器学习实战中的底五章的根据马的病症预测马的死亡性
 from numpy import array
 from pyspark import SparkContext
 from pyspark.mllib.classification import SVMWithSGD
