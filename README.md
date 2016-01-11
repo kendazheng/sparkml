@@ -20,3 +20,9 @@
 
 7. linear_regression.py
 线性回归算法调用
+
+8. kmeans.py
+kmeans聚类算法调用
+
+9. gmm.py
+GM聚类算法调用
