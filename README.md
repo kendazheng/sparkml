@@ -21,5 +21,5 @@
 7. logistic_regression.py
 逻辑回归算法调
 
-8.linear_regression.py
+8. linear_regression.py
 线性回归算法调用
