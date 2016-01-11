@@ -18,8 +18,5 @@
 6. gbts_decision_tree.py
 梯度平滑决策算法调用
 
-7. logistic_regression.py
-逻辑回归算法调
-
-8. linear_regression.py
+7. linear_regression.py
 线性回归算法调用
