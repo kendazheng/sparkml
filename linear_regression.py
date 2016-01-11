@@ -16,7 +16,7 @@ def textParser():
 if __name__ == '__main__':
     sc = SparkContext()
     datas = sc.parallelize(textParser())
-    model = LinearRegressionWithSGD.train(datas, step=5, iterations=500, regType='l1')
+    model = LinearRegressionWithSGD.train(datas, step=5, iterations=500, regType='l2')
 
     # 计算预测模型与训练值得方差
     prevals = datas.map(lambda p: (p.label, model.predict(p.features)))
