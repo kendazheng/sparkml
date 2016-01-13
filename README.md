@@ -29,3 +29,6 @@ GM聚类算法调用
 
 10. fp_growth.py
 fp_growth算法调用
+
+11. pca.py
+pca降维算法调用
