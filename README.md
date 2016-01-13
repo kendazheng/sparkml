@@ -26,3 +26,6 @@ kmeans聚类算法调用
 
 9. gmm.py
 GM聚类算法调用
+
+10. fp_growth.py
+fp_growth算法调用
