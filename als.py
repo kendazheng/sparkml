@@ -4,7 +4,7 @@ Program:als.py
 Description:sparl内置als算法调用
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-14 12:56:53
-Last modified: 2016-01-14 14:34:14
+Last modified: 2016-01-14 14:45:34
 Python release: 2.7
 """
 from pyspark import SparkContext
@@ -30,6 +30,6 @@ if __name__ == '__main__':
     ratesAndPreds = ratings.map(lambda r: (
         (r[0], r[1]), r[2])).join(predictions)
     print ratesAndPreds.collect()
-    # 计算误差的方差
+    # 计算误差
     MSE = ratesAndPreds.map(lambda r: (r[1][0] - r[1][1]) ** 2).mean()
     print("Mean Squared Error = " + str(MSE))
