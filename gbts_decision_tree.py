@@ -1,4 +1,12 @@
 # -*- coding:utf-8 -*-
+""""
+Program: GradientBoostedTrees
+Description: 调用spark内置的梯度平滑树示例
+Author: zhenglei - zhenglei@shinezone.com
+Date: 2016-01-14 13:37:09
+Last modified: 2016-01-14 13:38:49
+Python release: 2.7
+"""
 from numpy import array
 from pyspark import SparkContext
 from pyspark.mllib.regression import LabeledPoint

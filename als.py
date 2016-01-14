@@ -1,10 +1,10 @@
-# -* coding:utf-8 *-
+# -*- coding:utf-8 -*-
 """"
 Program:als.py
 Description:sparl内置als算法调用
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-14 12:56:53
-Last modified: 2016-01-14 13:10:33
+Last modified: 2016-01-14 13:34:08
 Python release: 2.7
 """
 from pyspark import SparkContext

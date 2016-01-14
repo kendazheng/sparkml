@@ -1,4 +1,12 @@
-# -* coding:utf-8 *-
+# -*- coding:utf-8 -*-
+""""
+Program: SVM
+Description:调用spark内置的支持向量机算法 
+Author: zhenglei - zhenglei@shinezone.com
+Date: 2016-01-14 13:46:41
+Last modified: 2016-01-14 13:49:45
+Python release: 2.7
+"""
 # 调用Spark的内置SVM算法识别手写数字
 import os
 from numpy import array

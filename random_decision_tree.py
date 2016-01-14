@@ -1,4 +1,12 @@
 # -*- coding:utf-8 -*-
+""""
+Program: RandomForest
+Description: 调用spark内置的随机森林算法
+Author: zhenglei - zhenglei@shinezone.com
+Date: 2016-01-14 13:45:53
+Last modified: 2016-01-14 13:46:34
+Python release: 2.7
+"""
 from numpy import array
 from pyspark import SparkContext
 from pyspark.mllib.regression import LabeledPoint

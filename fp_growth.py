@@ -1,4 +1,13 @@
-# -* coding:utf-8*-
+# -*- coding:utf-8 -*-
+""""
+Program: FPGrowth
+Description:调用spark内置的fpgrowth算法示例
+Author: zhenglei - zhenglei@shinezone.com
+Date: 2016-01-14 13:36:09
+Last modified: 2016-01-14 13:37:01
+Python release: 2.7
+"""
+
 # 调用spark内置的fp-growth算法，实现机器学习实战中的第十二章示例
 from pyspark import SparkContext
 from pyspark.mllib.fpm import FPGrowth

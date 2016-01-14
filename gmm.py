@@ -1,4 +1,12 @@
-# *- coding:utf-8 -*
+# -*- coding:utf-8 -*-
+""""
+Program: GMM
+Description: 调用spark内置的GMM算法示例
+Author: zhenglei - zhenglei@shinezone.com
+Date: 2016-01-14 13:38:58
+Last modified: 2016-01-14 13:50:11
+Python release: 2.7
+"""
 # 调用spark内部的kmeans算法实现完成机器学习实战中的第十章示例
 from numpy import array
 from pyspark import SparkContext
