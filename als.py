@@ -4,7 +4,7 @@ Program:als.py
 Description:sparl内置als算法调用
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-14 12:56:53
-Last modified: 2016-01-14 14:28:39
+Last modified: 2016-01-14 14:34:14
 Python release: 2.7
 """
 from pyspark import SparkContext
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     print ratings.collect()
     rank = 10
     numIterations = 10
-    # 训练模型
+    # 训练模型, rank是隐含影响特征，一般是初始为5-10，然后递增查看训练效果，直到效果不再改变，确定rank的值
     model = ALS.train(ratings, rank, numIterations)
     testdata = ratings.map(lambda p: (p[0], p[1]))
     # 对输入的数据进行预测
