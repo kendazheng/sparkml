@@ -4,7 +4,7 @@ Program:als.py
 Description:sparl内置als算法调用
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-14 12:56:53
-Last modified: 2016-01-14 13:34:08
+Last modified: 2016-01-14 14:28:39
 Python release: 2.7
 """
 from pyspark import SparkContext
@@ -19,11 +19,17 @@ if __name__ == '__main__':
     print ratings.collect()
     rank = 10
     numIterations = 10
+    # 训练模型
     model = ALS.train(ratings, rank, numIterations)
     testdata = ratings.map(lambda p: (p[0], p[1]))
+    # 对输入的数据进行预测
     predictions = model.predictAll(testdata).map(
         lambda r: ((r[0], r[1]), r[2]))
+    print predictions.collect()
+    # 获取所有预测及测试数据
     ratesAndPreds = ratings.map(lambda r: (
         (r[0], r[1]), r[2])).join(predictions)
+    print ratesAndPreds.collect()
+    # 计算误差的方差
     MSE = ratesAndPreds.map(lambda r: (r[1][0] - r[1][1]) ** 2).mean()
     print("Mean Squared Error = " + str(MSE))
