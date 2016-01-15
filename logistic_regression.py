@@ -4,7 +4,7 @@ Program: LogisticRegressionWithLBFGS
 Description: 调用spark内置的逻辑回归算法
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-14 13:41:19
-Last modified: 2016-01-14 13:42:00
+Last modified: 2016-01-15 15:55:28
 Python release: 2.7
 """
 # 调用Spark中的logistic regression算法，完成机器学习实战中的第五章对马的病死情况的预测
@@ -44,6 +44,7 @@ if __name__ == '__main__':
     print '**' * 50
     model = LogisticRegressionWithLBFGS.train(datas)
     print '--' * 50
+    # print model.toDebugString()
     print model.predict(array([2.0, 1.0, 38.5, 54.0, 20.0, 0.0, 1.0, 2.0, 2.0, 3.0, 4.0, 1.0, 2.0, 2.0, 5.9, 0.0, 2.0, 42.0, 6.3, 0.0, 0.0]))
     print model.predict(array([1.0, 1.0, 37.0, 56.0, 24.0, 3.0, 1.0, 4.0, 2.0, 4.0, 4.0, 3.0, 1.0, 1.0, 0.0, 0.0, 0.0, 35.0, 61.0, 3.0, 2.0]))
     print '--' * 50

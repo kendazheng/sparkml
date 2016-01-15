@@ -1,10 +1,10 @@
 # -*- coding:utf-8 -*-
 """"
 Program: LinearRegressionWithSGD
-Description: 调用spark内置的线性回归算法示例 
+Description: 调用spark内置的线性回归算法示例
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-14 13:40:31
-Last modified: 2016-01-14 13:41:11
+Last modified: 2016-01-15 16:11:43
 Python release: 2.7
 """
 # 调用Spark内置的LinearRegression算法对机器学习实战中的第八章鲍鱼年纪的预测
@@ -24,8 +24,8 @@ def textParser():
 if __name__ == '__main__':
     sc = SparkContext()
     datas = sc.parallelize(textParser())
-    model = LinearRegressionWithSGD.train(datas, step=5, iterations=500, regType='l2')
-
+    model = LinearRegressionWithSGD.train(datas, step=2, iterations=100)
+    # print model.toDebugString()
     # 计算预测模型与训练值得方差
     prevals = datas.map(lambda p: (p.label, model.predict(p.features)))
     MSE = prevals.map(lambda (v, p): (v - p) **

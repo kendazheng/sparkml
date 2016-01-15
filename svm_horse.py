@@ -26,6 +26,7 @@ if __name__ == '__main__':
     print datas.collect()[0]
     print '**' * 50
     model = SVMWithSGD.train(datas, iterations=100)
+    # print model.toDebugString()
     print '--' * 50
     print model.predict(array([2.0, 1.0, 38.5, 54.0, 20.0, 0.0, 1.0, 2.0, 2.0, 3.0, 4.0, 1.0, 2.0, 2.0, 5.9, 0.0, 2.0, 42.0, 6.3, 0.0, 0.0]))
     print '--' * 50

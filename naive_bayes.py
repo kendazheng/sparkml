@@ -4,7 +4,7 @@ Program: NaiveBayes
 Description: 调用spark内置的朴素贝叶斯算法
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-14 13:42:04
-Last modified: 2016-01-14 13:44:32
+Last modified: 2016-01-15 15:53:21
 Python release: 2.7
 """
 # 朴素贝叶斯算法，调用spark内部函数，实现机器学习实战中的邮件分类示例，属于源采用机器学习实战中的邮件文本数据，邮件文本存储在文件夹email中
@@ -67,6 +67,7 @@ if __name__ == '__main__':
     rdd_data = sc.parallelize(data)
     training, test = rdd_data.randomSplit([0.6, 0.4], seed=0)
     model = NaiveBayes.train(training, 1.0)
+    # print model.toDebugString()
     print '-' * 100
 
     # 预测数据，该数据为test数据集中的第一个，已知其label为1，确认为垃圾邮件，通过贝叶斯算法预测其分类同样为label=1
