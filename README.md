@@ -35,3 +35,6 @@ Spark pca降维算法调用
 
 12. als.py
 Spark als推荐算法调用
+
+13. carPredict.py
+利用spark内置算法预测上海车牌拍卖价格
