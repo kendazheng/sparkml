@@ -4,7 +4,7 @@ Program:carPredict.py
 Description:预测上海市车牌价格
 Author: zhenglei - zhenglei@shinezone.com
 Date: 2016-01-17 14:18:30
-Last modified: 2016-01-17 18:05:15
+Last modified: 2016-01-17 18:32:20
 Python release: 2.7
 """
 from numpy import array
@@ -26,10 +26,9 @@ def textParser(type):
 if __name__ == '__main__':
     sc = SparkContext()
     datas = sc.parallelize(textParser(1))
-    # model = LinearRegressionWithSGD.train(datas, step=0.00000000184434, iterations=2000, regType='l2')
-    model = LinearRegressionWithSGD.train(datas, step=0.00000000175234, iterations=2000, regType='l2')
+    model = LinearRegressionWithSGD.train(datas, step=0.00000000174434, iterations=2000, regType='l2')
+    # model = LinearRegressionWithSGD.train(datas, step=0.00000000175234766555555566666, iterations=5000, regType='l2')
     print '**' * 50
-    print datas.collect()[0]
     print model.weights
     print model.intercept
     print model.predict(array([9409, 187533, 84500, 84572]))
