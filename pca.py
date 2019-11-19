@@ -2,7 +2,7 @@
 """"
 Program: PCA
 Description: 调用spark内置的PCA算法
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:45:02
 # Last modified: 2016-01-28 19:23:14
 Python release: 2.7
