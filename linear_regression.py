@@ -2,7 +2,7 @@
 """"
 Program: LinearRegressionWithSGD
 Description: 调用spark内置的线性回归算法示例
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:40:31
 Last modified: 2016-01-17 14:50:46
 Python release: 2.7
