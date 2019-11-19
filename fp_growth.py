@@ -2,7 +2,7 @@
 """"
 Program: FPGrowth
 Description:调用spark内置的fpgrowth算法示例
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:36:09
 Last modified: 2016-01-14 13:37:01
 Python release: 2.7
