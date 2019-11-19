@@ -2,7 +2,7 @@
 """"
 Program: NaiveBayes
 Description: 调用spark内置的朴素贝叶斯算法
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:42:04
 Last modified: 2016-01-15 15:53:21
 Python release: 2.7
