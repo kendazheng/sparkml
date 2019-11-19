@@ -2,7 +2,7 @@
 """"
 Program: KMeans
 Description: 调用spark内置的Kmeans算法示例 
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:39:46
 Last modified: 2016-01-14 13:40:24
 Python release: 2.7
