@@ -2,7 +2,7 @@
 """"
 Program: GradientBoostedTrees
 Description: 调用spark内置的梯度平滑树示例
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendzheng@163.com
 Date: 2016-01-14 13:37:09
 Last modified: 2016-01-14 13:38:49
 Python release: 2.7
