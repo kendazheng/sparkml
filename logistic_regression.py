@@ -2,7 +2,7 @@
 """"
 Program: LogisticRegressionWithLBFGS
 Description: 调用spark内置的逻辑回归算法
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:41:19
 Last modified: 2016-01-17 15:26:49
 Python release: 2.7
