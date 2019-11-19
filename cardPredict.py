@@ -2,7 +2,7 @@
 """"
 Program:carPredict.py
 Description:预测上海市车牌价格
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-17 14:18:30
 Last modified: 2016-01-17 18:32:20
 Python release: 2.7
