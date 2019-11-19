@@ -2,7 +2,7 @@
 """"
 Program: SVM
 Description:调用spark内置的支持向量机算法 
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:46:41
 Last modified: 2016-01-14 13:49:45
 Python release: 2.7
