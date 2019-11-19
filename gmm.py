@@ -2,7 +2,7 @@
 """"
 Program: GMM
 Description: 调用spark内置的GMM算法示例
-Author: zhenglei - zhenglei@shinezone.com
+Author: zhenglei - kendazheng@163.com
 Date: 2016-01-14 13:38:58
 Last modified: 2016-01-14 13:50:11
 Python release: 2.7
